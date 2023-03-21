@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 550px;
+    width: 100%;
+}
+
+.header { 
+
+}
+
+.header .container { 
+
+}
+
+.header .container .profile { 
+
+}
+
+.header .container .profile img { 
+
+}
+
+.header .container .logo { 
+
+}
+
+.header .container .logo img { 
+
+}
+
+.header .container .chat { 
+
+}
+
+.header .container .chat img { 
+
+}
+
+.main { 
+
+}
+
+.main .container { 
+
+}
+
+.main .container .image-container { 
+
+}
+
+.main .container .image-container img { 
+
+}
+
+.main .container .image-container .title { 
+
+}
+
+.main .container .image-container .description { 
+
+}
+
+.footer { 
+
+}
+
+.footer .container { 
+
+}
+
+.footer .container .nope { 
+
+}
+
+.footer .container .nope img { 
+
+}
+
+.footer .container .like { 
+
+}
+
+.footer .container .like img { 
+
+}
