@@ -8,7 +8,7 @@ No installation is needed to run the Tindog app, follow these steps:
 - Download the files
 - Open the index.html
 
-License
+## License
 This project is licensed under the MIT. Thanks to Scrimba.com for the idea.
 
 
