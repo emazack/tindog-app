@@ -8,6 +8,8 @@ body {
     max-width: 550px;
     width: 100%;
     margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
 }
 
 img {
@@ -28,79 +30,96 @@ button {
     -webkit-appearance: none;
 }
 
-.header .container { 
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 23px 19px;
 }
 
-.profile, .chat { 
+.profile,
+.chat {
     max-width: 34px;
     cursor: pointer;
 }
 
-.header .container .logo { 
+.header .container .logo {
     max-width: 84px;
     cursor: pointer;
 }
 
-.header .container .logo img { 
+.main .container .image-container {
+    display: grid;
+    padding: 0 8px;
+}
+
+.main .container .image-container .text {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.main .container .image-container img {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    border-radius: 15px;
+}
+
+.main .container .image-container .title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: left;
+    color: #F8F8F8;
+    margin-left: 12px;
 
 }
 
-.header .container .chat { 
-
+.main .container .image-container .description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+    color: #B7B7B7;
+    margin-left: 12px;
+    margin-bottom: 16.5px;
 }
 
-.header .container .chat img { 
 
+.footer .container {
+    padding: 24px 8px 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
 }
 
-.main { 
-
+.nope,
+.like {
+    width: 91.87px;
+    height: 91.87px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px #E9E9EA;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-.main .container { 
-
+.nope {
+    justify-self: flex-end;
 }
 
-.main .container .image-container { 
-
+.like:hover {
+    background: #DBFFF4;
+    box-shadow: 0px 10px 20px #CCF1E6;
 }
 
-.main .container .image-container img { 
-
-}
-
-.main .container .image-container .title { 
-
-}
-
-.main .container .image-container .description { 
-
-}
-
-.footer { 
-
-}
-
-.footer .container { 
-
-}
-
-.footer .container .nope { 
-
-}
-
-.footer .container .nope img { 
-
-}
-
-.footer .container .like { 
-
-}
-
-.footer .container .like img { 
-
+.nope:hover {
+    background: #FFE7EF;
+    box-shadow: 0px 10px 20px #EDD9DF;
 }
