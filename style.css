@@ -30,6 +30,10 @@ button {
     -webkit-appearance: none;
 }
 
+.hidden {
+    display: none;
+}
+
 .header .container {
     display: flex;
     justify-content: space-between;
@@ -53,6 +57,15 @@ button {
     padding: 0 8px;
 }
 
+.badge {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    max-width: 233.91px;
+    border-radius: 10.3807px;
+    transform: rotate(-30deg);
+    transform-origin: right;
+}
+
 .main .container .image-container .text {
     grid-column: 1/1;
     grid-row: 1/1;
@@ -62,7 +75,7 @@ button {
     justify-content: flex-end;
 }
 
-.main .container .image-container img {
+.main .container .image-container .photo {
     grid-column: 1/1;
     grid-row: 1/1;
     border-radius: 15px;
