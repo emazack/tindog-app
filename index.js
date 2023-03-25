@@ -10,7 +10,7 @@ function getDog(dogs) {
 function noDogsHtml() {
     document.getElementById('footer').remove();
     return `
-    <div class="description"> 
+    <div class="description">
         (っ˘̩╭╮˘̩)っ
     </div>
     <div class="description"> 
