@@ -13,7 +13,7 @@ No installation is needed to run the Tindog app, follow these steps:
 
 ## Live
 Check out the online live app:
-
+https://emazack.github.io/tindog-app/
 
 ## License
 This project is licensed under the MIT. Thanks to Scrimba.com for the idea.
