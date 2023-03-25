@@ -9,9 +9,9 @@ class Dog {
         const { hasBeenLiked, hasBeenSwiped } = this
         if (hasBeenSwiped) {
             if (hasBeenLiked) {
-                return `<img class="badge" src="/images/badge-like.png" alt="like">`
+                return `<img class="badge" src="./images/badge-like.png" alt="like">`
             } else {
-                return `<img class="badge" src="/images/badge-nope.png" alt="dislike">`
+                return `<img class="badge" src="./images/badge-nope.png" alt="dislike">`
             }
         } else {
             return ``
