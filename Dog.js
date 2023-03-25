@@ -5,12 +5,6 @@ class Dog {
         Object.assign(this, data)
     }
 
-    noDogHtml() {
-        return `
-        No dogs :(
-        `
-    }
-
     badgeHtml() {
         const { hasBeenLiked, hasBeenSwiped } = this
         if (hasBeenSwiped) {
