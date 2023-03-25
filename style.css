@@ -27,7 +27,6 @@ button {
     line-height: normal;
     -webkit-font-smoothing: inherit;
     -moz-osx-font-smoothing: inherit;
-    -webkit-appearance: none;
 }
 
 .hidden {
@@ -55,7 +54,7 @@ button {
 .main .container .image-container {
     display: grid;
     padding: 0 8px;
-    width: 85vw;
+    max-width: 85vw;
     margin: 0 auto;
 }
 

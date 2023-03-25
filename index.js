@@ -39,12 +39,13 @@ function handleLike (isLiked) {
 }
 
 function render () {
-    document.getElementById("image-container").innerHTML = currentDog ? currentDog.dogHtml() : noDogsHtml()
+    imageContainer.innerHTML = currentDog ? currentDog.dogHtml() : noDogsHtml()
 }
 
+const likeButtons = document.querySelectorAll('[data-like]')
+const imageContainer = document.getElementById("image-container")
 let currentDog = getDog(dogs)
 let isWaiting = false
-const likeButtons = document.querySelectorAll('[data-like]');
 
 
 likeButtons.forEach(button => {
@@ -52,5 +53,5 @@ likeButtons.forEach(button => {
         handleLike(e.currentTarget.dataset.like)
     })
 });
-
+// First render
 render();
