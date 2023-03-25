@@ -6,7 +6,14 @@ This repository contains the source code for the Tindog application. It is built
 No installation is needed to run the Tindog app, follow these steps:
 
 - Download the files
-- Open the index.html
+- Open in Visual Studio Code
+- Install the plug-in Live Server
+- Press "Go Live" in the right bottom of the page
+- Open the live page
+
+## Live
+Check out the online live app:
+
 
 ## License
 This project is licensed under the MIT. Thanks to Scrimba.com for the idea.
