@@ -1,25 +1,36 @@
 import dogs from "./data.js";
 import Dog from "./Dog.js";
 
-const newDog = new Dog(dogs[2])
 
-function handleLike () {
-    console.log("Like");
+function getDog(dogs) {
+    const dog = dogs.shift()
+    return dog ? new Dog(dog) : {}
 }
 
-function handleDislike () {
-    console.log("dislike");
-
+function handleLike (isLiked) {
+    if (isLiked === "liked") {
+        currentDog.hasBeenSwiped = true
+        currentDog.hasBeenLiked = true
+    } else if (isLiked === "disliked") {
+        currentDog.hasBeenSwiped = true
+        currentDog.hasBeenLiked = false
+    }
+    render()
+    currentDog = getDog(dogs)
+    setTimeout(render, 1500);
 }
 
 function render () {
-    document.getElementById("image-container").innerHTML = newDog.dogHtml()
+    document.getElementById("image-container").innerHTML = currentDog.dogHtml()
 }
 
-const dislikeButton = document.getElementById("nope")
-const likeButton = document.getElementById("like")
+let currentDog = getDog(dogs)
+const likeButtons = document.querySelectorAll('[data-like]');
 
+likeButtons.forEach(button => {
+    button.addEventListener("click", (e) => {
+        handleLike(e.currentTarget.dataset.like)
+    })
+});
 
-likeButton.addEventListener("click", handleLike)
-dislikeButton.addEventListener("click", handleDislike)
 render();

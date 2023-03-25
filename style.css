@@ -55,6 +55,8 @@ button {
 .main .container .image-container {
     display: grid;
     padding: 0 8px;
+    width: 85vw;
+    margin: 0 auto;
 }
 
 .badge {
@@ -135,4 +137,8 @@ button {
 .nope:hover {
     background: #FFE7EF;
     box-shadow: 0px 10px 20px #EDD9DF;
+}
+
+[data-like] img {
+    pointer-events: none;
 }
